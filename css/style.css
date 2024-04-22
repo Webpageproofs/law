@@ -3525,6 +3525,9 @@ textarea:focus::placeholder {
 .services-slider-row.owl-carousel .owl-dots {
   background-color: #343b51;
 }
+.services-slider-row .owl-stage {
+  display: flex;
+}
 .services-slider-row::after {
   content: "";
   pointer-events: none;
@@ -6783,7 +6786,7 @@ span {
 }
 
 .places-slider-item {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   width: 100%;
   background-color: #fff;
   padding: 22px 20px;
@@ -9859,10 +9862,12 @@ span {
   position: relative;
 }
 .write-bis > img {
+  pointer-events: none;
   position: absolute;
   bottom: 50px;
   right: 0;
   width: 360px;
+  z-index: -1;
 }
 
 .places-bis .places__wrapp {
