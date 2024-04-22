@@ -3525,9 +3525,6 @@ textarea:focus::placeholder {
 .services-slider-row.owl-carousel .owl-dots {
   background-color: #343b51;
 }
-.services-slider-row .owl-stage {
-  display: flex;
-}
 .services-slider-row::after {
   content: "";
   pointer-events: none;
@@ -6786,7 +6783,7 @@ span {
 }
 
 .places-slider-item {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   width: 100%;
   background-color: #fff;
   padding: 22px 20px;
@@ -9875,7 +9872,7 @@ span {
 }
 @media (max-width: 767px) {
   .places-bis .places__wrapp {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 
