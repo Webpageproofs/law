@@ -10779,7 +10779,6 @@ span {
 }
 
 .ser-bis-co-news {
-  overflow: hidden;
   position: relative;
 }
 .ser-bis-co-news > img {
@@ -11377,6 +11376,31 @@ span {
   .co-qwe .law-price-question {
     margin-top: 200px;
   }
+}
+
+.te-resolved .resolved__wrapp {
+  padding-bottom: 0;
+}
+
+.te-lawyers .lawyers__wrapp {
+  padding-top: 0;
+}
+
+.te-mission {
+  overflow: visible;
+}
+.te-mission .mission__wrapp {
+  position: relative;
+  padding-top: 0;
+  overflow: visible;
+}
+.te-mission .mission__wrapp .mission-bg-img {
+  top: -624px;
+  z-index: 0;
+}
+
+.te-minimum .minimum__wrapp {
+  padding-bottom: 0;
 }
 
 body {
