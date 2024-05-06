@@ -3562,6 +3562,14 @@ textarea:focus::placeholder {
   margin-left: calc((100vw - 1600px) / 2);
   position: relative;
 }
+.services-slider-row.owl-carousel .owl-dots, .lawyers-sin-ser-row.owl-carousel .owl-dots {
+  background-color: #343b51;
+}
+@media (max-width: 767px) {
+  .services-slider-row.owl-carousel .owl-dots, .lawyers-sin-ser-row.owl-carousel .owl-dots {
+    background-color: transparent;
+  }
+}
 .services-slider-row.owl-carousel .owl-stage, .lawyers-sin-ser-row.owl-carousel .owl-stage {
   display: flex;
 }
@@ -3584,6 +3592,11 @@ textarea:focus::placeholder {
 @media (max-width: 1600px) {
   .services-slider-row, .lawyers-sin-ser-row {
     margin-left: 0;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .services-slider-row, .lawyers-sin-ser-row {
     padding: 0 15px;
   }
 }
@@ -3847,7 +3860,7 @@ textarea:focus::placeholder {
   margin-top: 10px;
   height: 1px;
   margin-right: 331px;
-  width: 42%;
+  width: 40%;
   background-color: rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 767px) {
@@ -6827,6 +6840,9 @@ span {
   .places-slider-row::after {
     width: 200px;
   }
+}
+.places-slider-row.owl-carousel .owl-dots {
+  background-color: #343b51;
 }
 @media (max-width: 1630px) {
   .places-slider-row {
@@ -12393,22 +12409,23 @@ span {
   color: #ffffff;
   display: flex;
 }
-.case-box-lr h3 {
+.case-box-lr h2 {
+  font-family: "Montserrat";
   font-weight: 700;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .case-box-lr h3 {
+  .case-box-lr h2 {
     font-size: calc(18px + 20.4 * (100vw - 320px) / 1600);
   }
 }
 @media (min-width: 767px) {
-  .case-box-lr h3 {
+  .case-box-lr h2 {
     font-size: calc(18px + 12 * 100vw / 1600);
   }
 }
 @media (min-width: 1600px) {
-  .case-box-lr h3 {
+  .case-box-lr h2 {
     font-size: 30px;
   }
 }
@@ -12453,16 +12470,32 @@ span {
     padding: 20px 15px;
   }
 }
-.case-cont h3 {
+.case-cont h1, .case-cont h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  .case-cont h1, .case-cont h2 {
+    font-size: calc(18px + 20.4 * (100vw - 320px) / 1600);
+  }
+}
+@media (min-width: 767px) {
+  .case-cont h1, .case-cont h2 {
+    font-size: calc(18px + 12 * 100vw / 1600);
+  }
+}
+@media (min-width: 1600px) {
+  .case-cont h1, .case-cont h2 {
+    font-size: 30px;
+  }
 }
 
 .case-menu {
   columns: 2;
   margin-bottom: 20px;
-  padding-left: 30px;
   width: 100%;
 }
 @media (max-width: 576px) {
@@ -12474,7 +12507,6 @@ span {
   margin-right: 20px;
 }
 .case-menu__li {
-  list-style: auto;
   font-family: "Inter";
   margin-bottom: 20px;
   transition: all 0.3s ease 0s;
@@ -12591,6 +12623,8 @@ span {
 
 .case-box-r-wr {
   width: 100%;
+  position: sticky;
+  top: 30px;
 }
 
 .case-author {
@@ -12692,6 +12726,26 @@ span {
 }
 .cases-similar .btn-white:hover {
   background-color: #49a0c1;
+}
+
+.case-cont-cont {
+  font-family: "Inter";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .case-cont-cont {
+    font-size: calc(14px + 15.3 * (100vw - 320px) / 1600);
+  }
+}
+@media (min-width: 767px) {
+  .case-cont-cont {
+    font-size: calc(14px + 9 * 100vw / 1600);
+  }
+}
+@media (min-width: 1600px) {
+  .case-cont-cont {
+    font-size: 23px;
+  }
 }
 
 .case-num-date {
@@ -12972,7 +13026,7 @@ span {
     width: 100%;
   }
 }
-.case-res-ttx h3 {
+.case-res-ttx h2 {
   margin-bottom: 20px;
   color: #347d98;
 }
@@ -13019,6 +13073,21 @@ span {
 .case-res-img p {
   font-family: "Inter";
   text-align: center;
+}
+@media (max-width: 767px) {
+  .case-res-img p {
+    font-size: calc(12px + 3.4 * (100vw - 320px) / 1600);
+  }
+}
+@media (min-width: 767px) {
+  .case-res-img p {
+    font-size: calc(12px + 2 * 100vw / 1600);
+  }
+}
+@media (min-width: 1600px) {
+  .case-res-img p {
+    font-size: 14px;
+  }
 }
 .case-res-img i {
   content: "";
@@ -13373,8 +13442,10 @@ span {
   }
 }
 .case-testimonial .write-qns h4 {
+  font-size: 14px;
   font-weight: 700;
   margin-right: 40px;
+  font-family: "Montserrat";
 }
 .case-testimonial .write-ttx2 {
   font-family: "Inter";
@@ -14262,8 +14333,8 @@ span {
     font-size: 23px;
   }
 }
-.art-info .case-menu li {
-  list-style: auto;
+.art-info .case-menu li ul {
+  padding-left: 30px;
 }
 .art-info .case-menu li ul li {
   list-style: none;
@@ -14295,28 +14366,27 @@ span {
 }
 .art-info ul.case-menu {
   columns: 1;
-  padding-left: 30px;
 }
 
 .art-item {
   font-family: "Inter";
 }
-.art-item > h4 {
+.art-item > span h4, .art-item > h4 {
   font-weight: 700;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .art-item > h4 {
+  .art-item > span h4, .art-item > h4 {
     font-size: calc(16px + 15.3 * (100vw - 320px) / 1600);
   }
 }
 @media (min-width: 767px) {
-  .art-item > h4 {
+  .art-item > span h4, .art-item > h4 {
     font-size: calc(16px + 9 * 100vw / 1600);
   }
 }
 @media (min-width: 1600px) {
-  .art-item > h4 {
+  .art-item > span h4, .art-item > h4 {
     font-size: 25px;
   }
 }
@@ -14359,7 +14429,7 @@ span {
   color: #347d98;
 }
 .art-item > h3,
-.art-item > h4 {
+.art-item > h4, .art-item span h2, .art-item h2 {
   font-family: "Montserrat";
 }
 .art-item > p {
@@ -14708,8 +14778,13 @@ span {
   display: flex;
   width: 100%;
   margin-left: 0;
-  padding: 0;
-  margin: 0 -15px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 1100px) {
+  .news-slider .places-slider-row {
+    margin: 0;
+  }
 }
 .news-slider .places-slider-row.owl-carousel .owl-nav {
   right: 0;
@@ -14724,16 +14799,42 @@ span {
 .news-slider .places-slider-col {
   width: 100%;
   margin-right: 0;
-  padding: 0 15px;
+}
+@media (max-width: 1100px) {
+  .news-slider .places-slider-col {
+    padding: 0;
+  }
 }
 .news-slider .places-slider-item {
   width: 100%;
+  height: 624px;
   background-color: transparent;
   padding: 0;
   border-radius: 25px;
+  position: relative;
+}
+@media (max-width: 1300px) {
+  .news-slider .places-slider-item {
+    height: 524px;
+  }
+}
+@media (max-width: 767px) {
+  .news-slider .places-slider-item {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .news-slider .places-slider-item {
+    height: 300px;
+  }
 }
 .news-slider .places-slider-item > img {
   border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 680px) {
@@ -14797,6 +14898,7 @@ span {
   }
 }
 .news-art-info .case-author {
+  margin-top: 0;
   width: 100%;
   margin-left: 0;
   padding-left: 30px;
