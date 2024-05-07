@@ -13501,6 +13501,12 @@ span {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,dadff0+100 */
   background: linear-gradient(to bottom, #ffffff 0%, #dadff0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+@media (max-width: 767px) {
+  .case-docs-list-wr .btn-main {
+    padding: 20px;
+    border-radius: 12px;
+  }
+}
 @media (max-width: 900px) {
   .case-docs-list-wr {
     padding: 20px;
