@@ -2186,6 +2186,10 @@ textarea:focus::placeholder {
   line-height: 1.2;
   text-align: center;
 }
+.main-nav-box .menu .up {
+  position: relative;
+  z-index: 3;
+}
 .main-nav-box .menu .up a {
   width: 44px;
   height: 44px;
@@ -3256,8 +3260,10 @@ textarea:focus::placeholder {
 }
 
 #popup-cookie {
+  transition: all 0.3s ease 0s;
   width: 770px;
   position: fixed;
+  z-index: 5;
   left: 60px;
   bottom: 20px;
 }
@@ -3316,7 +3322,11 @@ textarea:focus::placeholder {
     justify-content: center;
   }
 }
-#popup-cookie .popup__content .popup__box > a {
+#popup-cookie .popup__content .popup__box span {
+  font-weight: 400;
+}
+#popup-cookie .popup__content .popup__box > p {
+  cursor: pointer;
   color: #fff;
   transition: all 0.3s ease 0s;
   text-transform: uppercase;
@@ -3326,26 +3336,26 @@ textarea:focus::placeholder {
   background: linear-gradient(to bottom, rgb(58, 59, 68) 0%, rgb(34, 33, 38) 100%);
 }
 @media (max-width: 545px) {
-  #popup-cookie .popup__content .popup__box > a {
+  #popup-cookie .popup__content .popup__box > p {
     padding: 14px 26px;
   }
 }
 @media (max-width: 767px) {
-  #popup-cookie .popup__content .popup__box > a {
+  #popup-cookie .popup__content .popup__box > p {
     font-size: calc(8px + 10.2 * (100vw - 320px) / 1600);
   }
 }
 @media (min-width: 767px) {
-  #popup-cookie .popup__content .popup__box > a {
+  #popup-cookie .popup__content .popup__box > p {
     font-size: calc(8px + 6 * 100vw / 1600);
   }
 }
 @media (min-width: 1600px) {
-  #popup-cookie .popup__content .popup__box > a {
+  #popup-cookie .popup__content .popup__box > p {
     font-size: 14px;
   }
 }
-#popup-cookie .popup__content .popup__box > a:hover {
+#popup-cookie .popup__content .popup__box > p:hover {
   opacity: 0.9;
 }
 #popup-cookie .popup__content span {
@@ -4477,6 +4487,8 @@ textarea:focus::placeholder {
 }
 
 .resolved-nav {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12022,6 +12034,7 @@ span {
 }
 
 .dip-slider-row {
+  display: flex;
   margin-bottom: 40px;
 }
 .dip-slider-row.owl-carousel .owl-dots {
@@ -12430,6 +12443,10 @@ span {
 
 .cs-places .places__wrapp {
   padding-bottom: 10px;
+}
+
+.cs-services .owl-carousel .owl-dots {
+  background-color: transparent;
 }
 
 .case-box-lr {
